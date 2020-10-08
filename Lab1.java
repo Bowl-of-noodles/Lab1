@@ -19,12 +19,12 @@
     }
 
     private static int[] createOddArray(){
-        int[] d = new int[8];
+        int[] g = new int[8];
         int firstNumber = 5;
-        for(int i = 0; i < d.length; i++){
-            d[i] = i*2 + firstNumber;
+        for(int i = 0; i < g.length; i++){
+            g[i] = i*2 + firstNumber;
         }
-        return d;
+        return g;
     }
 
     private static float[] createFloatArray(){
@@ -36,26 +36,26 @@
     }
 
     private static double[][] createTwoDimenArrayDouble(){
-        double [][] d = new double[8][16];
-        for(int i = 0; i < d.length; i++){
-            for(int j = 0; j < d[i].length; j++){
+        double [][] c = new double[8][16];
+        for(int i = 0; i < c.length; i++){
+            for(int j = 0; j < c[i].length; j++){
                 switch(intArray[i]){
                     case 19:
-                        d[i][j] = math1(floatArray[j]);
+                        c[i][j] = math1(floatArray[j]);
                         break;
                     case 7:
                     case 11:
                     case 13:
                     case 15:
-                        d[i][j] = math2(floatArray[j]);
+                        c[i][j] = math2(floatArray[j]);
                         break;
                     default:
-                        d[i][j] = math3(floatArray[j]);
+                        c[i][j] = math3(floatArray[j]);
                         break;
                 }
             }
         }
-        return d;
+        return c;
     }
 
     private static double math1(float j){
